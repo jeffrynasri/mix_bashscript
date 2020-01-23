@@ -1,0 +1,3 @@
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+sed -i -e 's/#Port 22/Port {CHANGE THE PORT YOU WANT}/g' sshd_config
+service sshd restart
