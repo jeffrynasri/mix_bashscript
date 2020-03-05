@@ -1,0 +1,23 @@
+  
+#source : https://hostadvice.com/how-to/how-to-configure-firewall-with-ufw-on-ubuntu-18/
+# Tested In Ubuntu Server 18.04
+#Login In Root First
+
+#Step 1 Set Up Default Policies
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow in "Apache Full"
+
+#step 2 Allow SSH
+ufw allow ssh
+
+#Step 3 Allow Specific Incoming Connections
+//http
+sudo ufw allow 80
+//https
+sudo ufw allow 443
+//Mysql
+sudo ufw allow 3306
+
+#Step 4 Enabling UFW
+ufw enable
