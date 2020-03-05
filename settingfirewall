@@ -12,11 +12,11 @@ ufw allow in "Apache Full"
 ufw allow ssh
 
 #Step 3 Allow Specific Incoming Connections
-//http
+#http
 sudo ufw allow 80
-//https
+#https
 sudo ufw allow 443
-//Mysql
+#Mysql
 sudo ufw allow 3306
 
 #Step 4 Enabling UFW
