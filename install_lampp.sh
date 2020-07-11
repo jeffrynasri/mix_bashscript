@@ -15,3 +15,6 @@ mysql -e "SELECT user,authentication_string,plugin,host FROM mysql.user;ALTER US
 #Step 3 Install PHP
 apt install php libapache2-mod-php php-mysql -y
 chmod -R 755 /var/www/html
+
+# STEP 4 ENABLE HTACCESS
+# FOLLOW INSTRUCTION MANUAL IN https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite-for-apache-on-ubuntu-14-04
