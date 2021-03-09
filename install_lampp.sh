@@ -13,7 +13,7 @@ ufw allow in "Apache Full"
 
 #step 2 Install Mysql with default user root/password
 apt install mysql-server -y
-mysql -e "SELECT user,authentication_string,plugin,host FROM mysql.user;CREATE USER '{USER_MYSQL}'@'%' IDENTIFIED WITH mysql_native_password BY '{PASSWORD_MYSQL}';FLUSH PRIVILEGES;"
+mysql -e "SELECT user,authentication_string,plugin,host FROM mysql.user;CREATE USER '{USER_MYSQL}'@'%' IDENTIFIED WITH mysql_native_password BY '{PASSWORD_MYSQL}';GRANT ALL PRIVILEGES ON *.*  TO '{USER_MYSQL}'@'%';FLUSH PRIVILEGES;"
 
 
 #Step 3 Install PHP
