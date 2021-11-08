@@ -8,7 +8,7 @@
 
 #Step 1 Install Apache
 apt update
-apt install apache2 -y
+apt install nginx -y
 ufw allow 'Nginx HTTP'
 
 #step 2 Install Mysql with default user root/password
