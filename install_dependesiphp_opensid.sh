@@ -9,3 +9,4 @@ apt-get install -y php7.4-mysqli
 apt-get install -y php7.4-mysqlnd
 apt-get install -y php7.4-tidy
 apt-get install -y php7.4-zip
+apt-get install -y php7.4-xml
