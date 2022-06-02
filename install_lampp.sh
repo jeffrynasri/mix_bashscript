@@ -18,7 +18,7 @@ mysql -e "SELECT user,authentication_string,plugin,host FROM mysql.user;CREATE U
 
 #Step 3 Install PHP
 apt install php libapache2-mod-php php-mysql -y
-chmod -R 777 /var/www/html
+chmod -R 755 /var/www/html
 
 # STep 4 Add User to Apache Group
 usermod -aG www-data {USER_SERVER}
